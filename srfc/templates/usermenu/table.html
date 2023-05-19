@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Данные</h2>
+{% for item in object_list %}
+<h3>{{ item.region }}</h3>
+<p>
+{{ item.description }}
+</p>
+{% endfor %}
+{% endblock content %}
+
